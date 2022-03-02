@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.ProductController">
+   <children>
+      <Label layoutX="268.0" layoutY="14.0" text="Products" textFill="RED">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="100.0" text="ID:" />
+      <Label layoutX="40.0" layoutY="135.0" text="Name:" />
+      <Label layoutX="40.0" layoutY="170.0" text="Price:" />
+      <Label layoutX="40.0" layoutY="205.0" text="Stock" />
+      <Button layoutX="60.0" layoutY="260.0" mnemonicParsing="false" onAction="#insertButton" prefWidth="100.0" text="Insert">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="60.0" layoutY="300.0" mnemonicParsing="false" onAction="#deleteButton" prefWidth="100.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="60.0" layoutY="340.0" mnemonicParsing="false" onAction="#updateButton" prefWidth="100.0" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="196.0" layoutY="70.0" prefHeight="404.0" prefWidth="478.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="145.0" text="Name" />
+            <TableColumn fx:id="priceColumn" prefWidth="120.0" text="Price" />
+            <TableColumn fx:id="stockColumn" prefWidth="137.0" text="Stock" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idT" layoutX="62.0" layoutY="97.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="nameT" layoutX="81.0" layoutY="129.0" prefWidth="100.0" />
+      <TextField fx:id="priceT" layoutX="75.0" layoutY="166.0" prefHeight="25.0" prefWidth="70.0" />
+      <TextField fx:id="stockT" layoutX="75.0" layoutY="201.0" prefWidth="70.0" />
+      <Button layoutX="60.0" layoutY="430.0" mnemonicParsing="false" onAction="#goToMainWindow" prefHeight="25.0" prefWidth="100.0" text="Go Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="60.0" layoutY="380.0" mnemonicParsing="false" onAction="#show" prefWidth="100.0" text="Show">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

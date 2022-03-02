@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="460.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.OrderController">
+   <children>
+      <Label layoutX="210.0" layoutY="15.0" prefWidth="100.0" text="Orders" textFill="RED">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="80.0" text="ID:" />
+      <Label layoutX="30.0" layoutY="110.0" text="ClientID:" />
+      <Label layoutX="30.0" layoutY="140.0" text="ProductID:" />
+      <Label layoutX="30.0" layoutY="170.0" text="Quantity:" />
+      <TableView fx:id="table" layoutX="184.0" layoutY="73.0" prefHeight="367.0" prefWidth="320.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="75.0" text="ClientID" />
+            <TableColumn fx:id="emailColumn" prefWidth="75.0" text="ProductID" />
+            <TableColumn fx:id="phoneColumn" prefWidth="95.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idT" layoutX="53.0" layoutY="76.0" prefHeight="25.0" prefWidth="60.0" />
+      <TextField fx:id="quantityT" layoutX="83.0" layoutY="169.0" prefHeight="25.0" prefWidth="60.0" />
+      <Button layoutX="40.0" layoutY="210.0" mnemonicParsing="false" onAction="#insertButton" prefWidth="100.0" text="Insert">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="40.0" layoutY="410.0" mnemonicParsing="false" onAction="#goToMainWindow" prefWidth="100.0" text="Go Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="20.0" layoutY="370.0" mnemonicParsing="false" onAction="#generateBill" prefWidth="150.0" text="Generate Bill" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="40.0" layoutY="330.0" mnemonicParsing="false" onAction="#show" prefWidth="100.0" text="Show">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="40.0" layoutY="290.0" mnemonicParsing="false" onAction="#updateButton" prefWidth="100.0" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="40.0" layoutY="250.0" mnemonicParsing="false" onAction="#deleteButton" prefWidth="100.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="clientT" layoutX="79.0" layoutY="106.0" prefHeight="25.0" prefWidth="60.0" />
+      <ChoiceBox fx:id="productT" layoutX="88.0" layoutY="136.0" prefHeight="25.0" prefWidth="60.0" />
+   </children>
+</AnchorPane>

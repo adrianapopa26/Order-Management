@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.ClientController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="375.0" layoutY="20.0" prefHeight="40.0" prefWidth="100.0" text="Clients" textFill="RED">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="80.0" layoutY="430.0" mnemonicParsing="false" onAction="#goToMainWindow" prefWidth="100.0" text="Go Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="40.0" layoutY="90.0" text="ID:" />
+      <Label layoutX="40.0" layoutY="120.0" text="Name:" />
+      <Label layoutX="40.0" layoutY="150.0" text="Email:" />
+      <Label layoutX="40.0" layoutY="180.0" text="Phone Number:" />
+      <Button layoutX="80.0" layoutY="260.0" mnemonicParsing="false" onAction="#insertButton" prefHeight="25.0" prefWidth="100.0" text="Insert">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="80.0" layoutY="300.0" mnemonicParsing="false" onAction="#deleteButton" prefWidth="100.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="80.0" layoutY="340.0" mnemonicParsing="false" onAction="#updateButton" prefWidth="100.0" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="246.0" layoutY="76.0" prefHeight="396.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="67.0" text="ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="126.0" text="Name" />
+            <TableColumn fx:id="emailColumn" prefWidth="184.0" text="Email" />
+            <TableColumn fx:id="phoneColumn" prefWidth="122.0" text="PhoneNumber" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idT" layoutX="60.0" layoutY="85.0" prefHeight="25.0" prefWidth="43.0" />
+      <TextField fx:id="nameT" layoutX="80.0" layoutY="115.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="emailT" layoutX="80.0" layoutY="146.0" />
+      <TextField fx:id="phoneT" layoutX="127.0" layoutY="175.0" prefWidth="100.0" />
+      <Button layoutX="80.0" layoutY="380.0" mnemonicParsing="false" onAction="#show" prefHeight="25.0" prefWidth="100.0" text="Show">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,7 @@
+Order number:5
+Client: Maria
+Product: apa
+Price/buc: 2.0
+Quantity: 3
+Final price: 6.0
+
